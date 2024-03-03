@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/tab_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/ligth_blue"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                />
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:tabGravity="fill"
+                android:layout_marginTop="10dp"
+                android:background="@color/ligth_blue"
+
+
+                app:tabMode="fixed"
+                app:tabTextColor="@color/white"
+                android:layout_weight="1"
+                />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_spinner"/>
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/btn_freeup"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:text="Free Up 1024 MB"
+        app:layout_constraintTop_toBottomOf="@id/tab_bar_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/ligth_blue"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_freeup"
+         >
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_notify"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="28dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
