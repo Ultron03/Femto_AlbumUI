@@ -2,8 +2,13 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Femto_SECOND_UI" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-<!--         <item name="colorPrimary">@color/my_light_primary</item>-->
+<!--         <item name="colorPrimary">#00000000</item>-->
     </style>
 
     <style name="Theme.Femto_SECOND_UI" parent="Base.Theme.Femto_SECOND_UI" />
+    <style name="App.Custom.SelectedTextAppearance" parent="Widget.Material3.TabLayout">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>

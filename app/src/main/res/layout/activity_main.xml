@@ -40,9 +40,10 @@
                 app:tabGravity="fill"
                 android:layout_marginTop="10dp"
                 android:background="@color/ligth_blue"
-
-
+                app:tabIndicatorColor="@color/ligth_blue"
                 app:tabMode="fixed"
+
+                app:tabSelectedTextAppearance="@style/App.Custom.SelectedTextAppearance"
                 app:tabTextColor="@color/white"
                 android:layout_weight="1"
                 />
